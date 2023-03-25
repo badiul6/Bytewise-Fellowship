@@ -47,6 +47,7 @@ print('Multi Line String: $str');
     var result= x%2 == 0? 'Even':'Odd';
     print(result);
     //type test
+    // ignore: unnecessary_type_check
     if (x is int){
       print('integer');
     }
