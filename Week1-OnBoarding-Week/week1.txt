@@ -1,0 +1,3 @@
+First week was our onboarding week. 
+In this week we talked about the pathway of this bytewise fellowship program, learned Git and Github.
+and we made our Fellowship Repository on Github. 
