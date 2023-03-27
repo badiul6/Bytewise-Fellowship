@@ -1,4 +1,5 @@
 import 'package:english_words/english_words.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -71,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           SafeArea(
             child: NavigationRail(
-              extended: false,
+              extended:kIsWeb? true: false,
               destinations: [
                 NavigationRailDestination(
                   icon: Icon(Icons.home),
