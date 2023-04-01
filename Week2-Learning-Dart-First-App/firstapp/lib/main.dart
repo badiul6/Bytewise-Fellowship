@@ -102,9 +102,14 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-class Favorites extends StatelessWidget {
+class Favorites extends StatefulWidget {
   const Favorites({Key? key}) : super(key: key);
 
+  @override
+  State<Favorites> createState() => _FavoritesState();
+}
+
+class _FavoritesState extends State<Favorites> {
   @override
   Widget build(BuildContext context) {
     final theme= Theme.of(context);
@@ -124,6 +129,11 @@ class Favorites extends StatelessWidget {
           SizedBox(height: 10,),
           for(var word in fvrt)
             ListTile(
+              onTap:() {
+                setState(() {
+                fvrt.remove(word);                  
+                });
+              },
               leading: Icon(Icons.favorite, color:theme.primaryColor ),
               title: Text(word.asLowerCase, style: style,),
             )
