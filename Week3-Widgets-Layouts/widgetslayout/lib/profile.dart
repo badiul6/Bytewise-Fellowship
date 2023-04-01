@@ -139,7 +139,6 @@ class Profile extends StatelessWidget {
               itemCount: 2,
               itemBuilder: ((context, index) {
                 return Column(
-
                   children: const [
                     Padding(
                       padding: EdgeInsets.only(bottom: 8.0),
@@ -162,7 +161,6 @@ class Profile extends StatelessWidget {
                         trailing: Icon(Icons.star_border_outlined),
                       ),
                     ),
-                   
                     Padding(
                       padding: EdgeInsets.only(bottom: 8.0),
                       child: ListTile(
@@ -264,19 +262,16 @@ class Profile extends StatelessWidget {
           NavigationDestination(
             icon: Icon(Icons.search),
             label: 'Search',
-          ), 
-         
-            NavigationDestination(
-           
+          ),
+          NavigationDestination(
             icon: Icon(Icons.person),
             label: 'Profile',
-          ), 
+          ),
           NavigationDestination(
-           
             icon: Icon(Icons.bookmark_border),
             label: 'Saved',
-          ), NavigationDestination(
-           
+          ),
+          NavigationDestination(
             icon: Icon(Icons.settings),
             label: 'Setting',
           ),
