@@ -19,10 +19,9 @@ class _LoginState extends State<Login> {
           Text(
             "Welcome $str",
             style: const TextStyle(
-              fontSize: 35,
-              fontWeight: FontWeight.bold,
-              color: Color.fromARGB(255, 78, 55, 46)
-            ),
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 78, 55, 46)),
           ),
           const SizedBox(
             height: 50,
@@ -37,7 +36,8 @@ class _LoginState extends State<Login> {
               },
               decoration: const InputDecoration(
                   labelText: "Username",
-                  labelStyle: TextStyle(color: Colors.grey)),
+                  labelStyle:
+                      TextStyle(color: Color.fromARGB(255, 131, 130, 130))),
             ),
           ),
           Padding(
@@ -46,7 +46,8 @@ class _LoginState extends State<Login> {
               obscureText: true,
               decoration: const InputDecoration(
                   labelText: "Password",
-                  labelStyle: TextStyle(color: Colors.grey)),
+                  labelStyle:
+                      TextStyle(color: Color.fromARGB(255, 131, 130, 130))),
             ),
           ),
           InkWell(
@@ -74,7 +75,7 @@ class _LoginState extends State<Login> {
               child: Container(
                   margin: const EdgeInsets.only(left: 25.0, right: 15.0),
                   child: const Divider(
-                    color: Colors.grey,
+                    color: Colors.black,
                   )),
             ),
             const Text(
@@ -85,7 +86,7 @@ class _LoginState extends State<Login> {
               child: Container(
                   margin: const EdgeInsets.only(left: 15.0, right: 25.0),
                   child: const Divider(
-                    color: Colors.grey,
+                    color: Colors.black,
                   )),
             ),
           ]),
@@ -97,11 +98,11 @@ class _LoginState extends State<Login> {
             children: const [
               Icon(
                 Icons.facebook,
-                color: Colors.blue,
+                color: Color.fromARGB(255, 10, 102, 177),
               ),
               Text(
                 "  Log in With Facebook",
-                style: TextStyle(color: Colors.blue),
+                style: TextStyle(color: Color.fromARGB(255, 6, 95, 169)),
               )
             ],
           ),

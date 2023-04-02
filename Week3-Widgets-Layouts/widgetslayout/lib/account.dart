@@ -96,8 +96,20 @@ class Account extends StatelessWidget {
                             fontSize: 15,
                             fontWeight: FontWeight.bold),
                       ),
-                      const SizedBox(
-                        height: 30,
+                      Row(
+                        children: const [
+                          SizedBox(
+                            height: 30,
+                          ),
+                          SizedBox(
+                            width: 200,
+                          ),
+                          Image(
+                              image: NetworkImage(
+                                  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/300px-Mastercard_2019_logo.svg.png'),
+                              width: 30,
+                              height: 20)
+                        ],
                       ),
                       Row(
                         children: const [
@@ -164,8 +176,20 @@ class Account extends StatelessWidget {
                             fontSize: 15,
                             fontWeight: FontWeight.bold),
                       ),
-                      const SizedBox(
-                        height: 30,
+                      Row(
+                        children: const [
+                          SizedBox(
+                            height: 30,
+                          ),
+                          SizedBox(
+                            width: 200,
+                          ),
+                          Image(
+                              image: NetworkImage(
+                                  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/300px-Mastercard_2019_logo.svg.png'),
+                              width: 30,
+                              height: 20)
+                        ],
                       ),
                       Row(
                         children: const [
@@ -228,8 +252,20 @@ class Account extends StatelessWidget {
                             fontSize: 15,
                             fontWeight: FontWeight.bold),
                       ),
-                      const SizedBox(
-                        height: 30,
+                      Row(
+                        children: const [
+                          SizedBox(
+                            height: 30,
+                          ),
+                          SizedBox(
+                            width: 200,
+                          ),
+                          Image(
+                              image: NetworkImage(
+                                  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/300px-Mastercard_2019_logo.svg.png'),
+                              width: 30,
+                              height: 20)
+                        ],
                       ),
                       Row(
                         children: const [
@@ -299,16 +335,17 @@ class Account extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: TextButton(
-                onPressed: () {},
-                child: const Text(
-                  "Add Money",
-                  style: TextStyle(color: Colors.white),
-                ),
-                style: TextButton.styleFrom(
-                    fixedSize: const Size(220, 45),
-                    backgroundColor: Colors.black87,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)))),
+              onPressed: () {},
+              style: TextButton.styleFrom(
+                  fixedSize: const Size(220, 45),
+                  backgroundColor: Colors.black87,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20))),
+              child: const Text(
+                "Add Money",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
           ),
         ],
       ),
