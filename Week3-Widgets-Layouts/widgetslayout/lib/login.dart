@@ -20,6 +20,8 @@ class _LoginState extends State<Login> {
             "Welcome $str",
             style: const TextStyle(
               fontSize: 35,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 78, 55, 46)
             ),
           ),
           const SizedBox(
@@ -56,7 +58,7 @@ class _LoginState extends State<Login> {
               margin: const EdgeInsets.all(25),
               height: 40,
               decoration: BoxDecoration(
-                  color: Colors.blue, borderRadius: BorderRadius.circular(10)),
+                  color: Colors.brown, borderRadius: BorderRadius.circular(10)),
               child: const Center(
                   child: Text(
                 "Login",
@@ -77,7 +79,7 @@ class _LoginState extends State<Login> {
             ),
             const Text(
               "OR",
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(color: Colors.black),
             ),
             Expanded(
               child: Container(
@@ -129,7 +131,7 @@ class _LoginState extends State<Login> {
                           TextSpan(
                               text: "  Sign up",
                               style:
-                                  TextStyle(color: Colors.blue, fontSize: 16))
+                                  TextStyle(color: Colors.brown, fontSize: 16))
                         ]),
                   ),
                 ),

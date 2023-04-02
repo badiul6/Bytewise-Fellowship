@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgetslayout/account.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -106,7 +107,10 @@ class Profile extends StatelessWidget {
                               const Color.fromARGB(255, 155, 190, 207),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15))),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const Account()));
+                      },
                       child: const Text(
                         "Share",
                         style:
