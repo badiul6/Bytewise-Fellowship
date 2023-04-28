@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interactivity_assets/screen3.dart';
 
 class ParentWid extends StatefulWidget {
   const ParentWid({super.key});
@@ -24,8 +25,18 @@ class _ParentWidState extends State<ParentWid> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text("Box"),
-            MyCon(active: _active, onChanged: _handletap)
+            MyCon(active: _active, onChanged: _handletap),
+            const SizedBox(height: 50,),
+            FloatingActionButton(
+              child: const Icon(Icons.arrow_forward),
+              onPressed:() {
+                Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const ParentWidget()));
+              
+            },)
+          
           ],
+
         ),
       ),
     );

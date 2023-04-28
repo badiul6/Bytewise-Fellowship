@@ -16,6 +16,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        title: 'Flutter layout demo', home: ParentWidget());
+        title: 'Flutter layout demo', home: Screen1());
   }
 }

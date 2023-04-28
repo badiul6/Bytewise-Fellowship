@@ -123,6 +123,13 @@ class Screen1 extends StatelessWidget {
             titleSection,
             buttonSection,
             textSection,
+            FloatingActionButton(
+              child: const Icon(Icons.arrow_forward),
+              onPressed:() {
+                Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const ParentWid()));
+              
+            },)
           ],
         ),
     );
