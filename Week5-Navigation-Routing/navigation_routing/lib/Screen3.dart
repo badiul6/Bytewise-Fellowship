@@ -14,7 +14,7 @@ class Screen3 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-             Text("Age: "+ data['Age'], style: const TextStyle(fontSize: 20),),
+            Text("Age: "+ data['Age'], style: const TextStyle(fontSize: 20),),
             const SizedBox(height: 20,),
             ElevatedButton(
                 onPressed: () {
