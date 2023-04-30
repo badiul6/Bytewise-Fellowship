@@ -13,7 +13,9 @@ class _SecondPageState extends State<SecondPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:const Text("Tween Animation Builder"),),
+      appBar: AppBar(
+        title: const Text("Tween Animation Builder"),
+      ),
       backgroundColor: Colors.black,
       body: Center(
         child: Column(
@@ -34,21 +36,21 @@ class _SecondPageState extends State<SecondPage> {
               onChanged: (value) {
                 setState(() {
                   _newValue = value;
-                  _newColor = Color.lerp(Colors.white,
-                      Colors.greenAccent, _newValue);
+                  _newColor =
+                      Color.lerp(Colors.white, Colors.greenAccent, _newValue);
                 });
               },
             ),
-      //     const  SizedBox(height: 20,),
-      // FloatingActionButton(onPressed: (){
-      // Navigator.push(context, 
-      // MaterialPageRoute(builder: 
-      // (context) => ThirdPage()
-      // )
-      // );
-      // },
-      // child: const Text("Next"),
-      // )
+            //     const  SizedBox(height: 20,),
+            // FloatingActionButton(onPressed: (){
+            // Navigator.push(context,
+            // MaterialPageRoute(builder:
+            // (context) => ThirdPage()
+            // )
+            // );
+            // },
+            // child: const Text("Next"),
+            // )
           ],
         ),
       ),

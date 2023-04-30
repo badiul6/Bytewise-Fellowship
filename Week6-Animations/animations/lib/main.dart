@@ -1,5 +1,4 @@
 import 'package:animations/firstpage.dart';
-import 'package:animations/secondpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,8 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SecondPage(),
+      home: FirstPage(),
     );
   }
 }
-
