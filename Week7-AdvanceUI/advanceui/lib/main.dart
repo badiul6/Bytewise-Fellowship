@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:advanceui/firstscreen.dart';
-// import 'package:advanceui/secondscreen.dart';
+import 'package:advanceui/secondscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

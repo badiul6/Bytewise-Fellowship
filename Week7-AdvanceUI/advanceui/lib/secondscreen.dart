@@ -1,9 +1,8 @@
 import 'dart:ui';
 
-// import 'package:advanceui/thirdscreen.dart';
+import 'package:advanceui/thirdscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'firstscreen.dart';
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
@@ -55,13 +54,13 @@ class _MyWidgetState extends State<MyWidget> {
                 ),
                 const SizedBox(
                   height: 270,
-                // ),
-                // FloatingActionButton(
-                //   onPressed: () {
-                //     Navigator.push(context,
-                //         MaterialPageRoute(builder: (context) => ThirdScreen()));
-                //   },
-                //   child: const Text("Next"),
+                ),
+                FloatingActionButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ThirdScreen()));
+                  },
+                  child: const Text("Next"),
                 )
               ],
             ),

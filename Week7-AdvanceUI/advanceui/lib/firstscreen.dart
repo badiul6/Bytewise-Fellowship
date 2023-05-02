@@ -1,5 +1,4 @@
-// import 'package:advanceui/secondscreen.dart';
-// import 'package:advanceui/thirdscreen.dart';
+import 'package:advanceui/secondscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -111,13 +110,13 @@ class _FirstScreenState extends State<FirstScreen> {
                                           const SizedBox(
                   height: 20,
                 ),
-                // FloatingActionButton(
-                //   onPressed: () {
-                //     Navigator.push(context,
-                //         MaterialPageRoute(builder: (context) => MyWidget()));
-                //   },
-                //   child: const Text("Next"),
-                // )
+                FloatingActionButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MyWidget()));
+                  },
+                  child: const Text("Next"),
+                )
 
                   ]),
             ),
