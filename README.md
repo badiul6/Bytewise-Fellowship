@@ -13,3 +13,5 @@ Week 4: Adding Assets and Interactivity
 Week 5: Navigation and Routing
 
 Week 6: Animations
+
+Week 6: Advance UI
