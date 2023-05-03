@@ -1,3 +1,4 @@
+import 'package:advanceui/forthscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -38,7 +39,12 @@ class ThirdScreen extends StatelessWidget {
               ),
             ),
           const OrderedButtonRow(),
-          const MyStatefulWidget()
+          const MyStatefulWidget(),
+          const SizedBox(height: 20,),
+          FloatingActionButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> const ForthScreen()));
+            }
+          ,child: const Text("Next"))
           ],
         ));
   }
