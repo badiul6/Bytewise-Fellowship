@@ -64,8 +64,8 @@ class _FirstScreenState extends State<FirstScreen> {
                     const Image(
                         height: 400,
                         width: 250,
-                        image: NetworkImage(
-                            "https://odo-cdn.imgix.net/catalog/product/165/874/1658742829.2962.jpeg?auto=compress,format&w=800&h=800&bg=fff&fit=fill")),
+                        image: AssetImage(
+                            "assets/iphonex.jpeg")),
                     Text(
                       "Quantity: $_quantity",
                       style: TextStyle(fontSize: 20),
