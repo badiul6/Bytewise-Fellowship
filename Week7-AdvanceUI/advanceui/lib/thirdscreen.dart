@@ -23,7 +23,7 @@ class ThirdScreen extends StatelessWidget {
               child: const TextField(),
             ),
             const SizedBox(
-              height: 20,
+              height: 0,
             ),
             Focus(
               child: Builder(
