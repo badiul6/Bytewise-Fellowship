@@ -1,3 +1,4 @@
+import 'package:advanceui/fifthscreen.dart';
 import 'package:flutter/material.dart';
 
 class ForthScreen extends StatefulWidget {
@@ -37,7 +38,13 @@ class _ForthScreenState extends State<ForthScreen> {
                 borderRadius: BorderRadius.circular(40)
               )
               ,child: Center(child: Text(_on?"Switch ON":"Switch OFF")),),
-            )
+
+            ),
+            const SizedBox(height: 20,),
+            FloatingActionButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> const Silvers()));
+            }
+          ,child: const Text("Next"))
 
           ],
         ),
