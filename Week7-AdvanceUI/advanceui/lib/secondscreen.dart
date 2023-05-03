@@ -1,9 +1,8 @@
 import 'dart:ui';
-
 import 'package:advanceui/thirdscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'firstscreen.dart';
+
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
 
@@ -13,11 +12,12 @@ class MyWidget extends StatefulWidget {
 
 class _MyWidgetState extends State<MyWidget> {
   int count = 0;
-  TextStyle _style = TextStyle(fontFamily: 'Foldit');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Fonts and Typography"),),
+      appBar: AppBar(
+        title: const Text("Fonts and Typography"),
+      ),
       body: CallbackShortcuts(
         bindings: <ShortcutActivator, VoidCallback>{
           const SingleActivator(LogicalKeyboardKey.arrowUp): () {
@@ -57,8 +57,10 @@ class _MyWidgetState extends State<MyWidget> {
                 ),
                 FloatingActionButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => ThirdScreen()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ThirdScreen()));
                   },
                   child: const Text("Next"),
                 )

@@ -64,8 +64,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     const Image(
                         height: 400,
                         width: 250,
-                        image: AssetImage(
-                            "assets/iphonex.jpeg")),
+                        image: AssetImage("assets/iphonex.jpeg")),
                     Text(
                       "Quantity: $_quantity",
                       style: TextStyle(fontSize: 20),
@@ -105,19 +104,20 @@ class _FirstScreenState extends State<FirstScreen> {
                       height: 15,
                     ),
                     Text("Price: $_price",
-                        style:
-                          const TextStyle(fontSize: 30, color: Colors.blueAccent)),
-                                          const SizedBox(
-                  height: 20,
-                ),
-                FloatingActionButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MyWidget()));
-                  },
-                  child: const Text("Next"),
-                )
-
+                        style: const TextStyle(
+                            fontSize: 30, color: Colors.blueAccent)),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    FloatingActionButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MyWidget()));
+                      },
+                      child: const Text("Next"),
+                    )
                   ]),
             ),
           ),

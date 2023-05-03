@@ -38,13 +38,19 @@ class ThirdScreen extends StatelessWidget {
                 },
               ),
             ),
-          const OrderedButtonRow(),
-          const MyStatefulWidget(),
-          const SizedBox(height: 20,),
-          FloatingActionButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=> const ForthScreen()));
-            }
-          ,child: const Text("Next"))
+            const OrderedButtonRow(),
+            const MyStatefulWidget(),
+            const SizedBox(
+              height: 20,
+            ),
+            FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ForthScreen()));
+                },
+                child: const Text("Next"))
           ],
         ));
   }
@@ -122,6 +128,7 @@ class OrderedButtonRow extends StatelessWidget {
     );
   }
 }
+
 class MyStatefulWidget extends StatefulWidget {
   const MyStatefulWidget({super.key});
 
@@ -132,22 +139,22 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
-    return  Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child:
-                  TextButton(onPressed: () {}, child: const Text('Press Me')),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: FadButton(onPressed: () {}, child: const Text('And Me')),
-            ),
-          ],
-     );
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: TextButton(onPressed: () {}, child: const Text('Press Me')),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: FadButton(onPressed: () {}, child: const Text('And Me')),
+        ),
+      ],
+    );
   }
 }
+
 class FadButton extends StatefulWidget {
   const FadButton({
     super.key,
