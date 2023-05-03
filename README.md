@@ -14,4 +14,4 @@ Week 5: Navigation and Routing
 
 Week 6: Animations
 
-Week 6: Advance UI
+Week 7: Advance UI
