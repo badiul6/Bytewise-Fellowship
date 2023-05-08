@@ -15,3 +15,5 @@ Week 5: Navigation and Routing
 Week 6: Animations
 
 Week 7: Advance UI
+
+Week 8: Task Submissions + Team Meetings + Feedback
