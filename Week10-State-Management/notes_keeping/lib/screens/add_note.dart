@@ -15,23 +15,23 @@ class AddNote extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Edit Note"),
-          actions:  [
+          actions: [
             Consumer<NotesProvider>(
-              builder:(context, value, child) {
-                return  InkWell(
-                onTap:() {
-                  String title = titleController.text;
-                String description = descriptionController.text;
-                  
-                  if(title!=""||description!=""){
-            value.addItem(title, description);
-                  }
-                  
-                  print(value.notes);
-                  Navigator.pop(context);
-                  // Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
-                },
-                child: Icon(Icons.check));
+              builder: (context, value, child) {
+                return InkWell(
+                    onTap: () {
+                      String title = titleController.text;
+                      String description = descriptionController.text;
+
+                      if (title != "" || description != "") {
+                        value.addItem(title, description);
+                      }
+
+                      print(value.notes);
+                      Navigator.pop(context);
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+                    },
+                    child: Icon(Icons.check));
               },
             ),
             const SizedBox(
@@ -44,7 +44,6 @@ class AddNote extends StatelessWidget {
             TextFormField(
               controller: titleController,
               decoration: const InputDecoration(hintText: "Title"),
-              
             ),
             const SizedBox(
               height: 10,

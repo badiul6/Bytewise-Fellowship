@@ -15,10 +15,13 @@ class HomeScreen extends StatelessWidget {
           title: const Text("All Notes"),
           actions: [
             InkWell(
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> const FavoriteNotes()));
-              },
-              child: const Icon(Icons.favorite_sharp)),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const FavoriteNotes()));
+                },
+                child: const Icon(Icons.favorite_sharp)),
             const SizedBox(
               width: 10,
             )

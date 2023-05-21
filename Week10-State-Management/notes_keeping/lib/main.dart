@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          
           primarySwatch: Colors.indigo,
         ),
         home: const HomeScreen(),
@@ -26,4 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
