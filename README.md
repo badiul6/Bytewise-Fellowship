@@ -17,3 +17,7 @@ Week 6: Animations
 Week 7: Advance UI
 
 Week 8: Task Submissions + Team Meetings + Feedback
+
+Week 9: State Management (Single and MultiProviders)
+
+Week 10: Notes Keeping App using Provider State Management
