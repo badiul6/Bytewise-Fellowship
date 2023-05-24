@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_keeping/providers/theme_provider.dart';
 import 'package:notes_keeping/screens/add_note.dart';
 import 'package:notes_keeping/screens/fvrt_notes.dart';
 import 'package:provider/provider.dart';
@@ -10,7 +11,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // final Theme= Provider.of<ThemeProvider>(context);
+     bool newval= false;
     return Scaffold(
+      
         appBar: AppBar(
           title: const Text("All Notes"),
           actions: [
@@ -22,6 +26,24 @@ class HomeScreen extends StatelessWidget {
                           builder: (context) => const FavoriteNotes()));
                 },
                 child: const Icon(Icons.favorite_sharp)),
+                Consumer<ThemeProvider>(
+                  builder: (context, val, child) {
+                   return Switch.adaptive(
+                    
+                  value: newval, 
+                  onChanged:(value) {
+                    if(value){
+                      val.changeTheme(ThemeMode.dark);
+                      newval=value;
+                    }
+                    else{
+                      newval=value;
+                      val.changeTheme(ThemeMode.light);
+                    }
+                  },); 
+                  },
+                  
+                ),
             const SizedBox(
               width: 10,
             )

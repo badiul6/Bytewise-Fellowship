@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_keeping/providers/notes_provider.dart';
-import 'package:notes_keeping/screens/add_note.dart';
+import 'package:notes_keeping/providers/theme_provider.dart';
 import 'package:notes_keeping/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -13,14 +13,32 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => NotesProvider(),
-      child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.indigo,
-        ),
-        home: const HomeScreen(),
+
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => NotesProvider()),
+        ChangeNotifierProvider(create: (context) => ThemeProvider())
+      ],
+      child: Builder(
+        builder: (BuildContext context) {
+          final theme= Provider.of<ThemeProvider>(context);
+
+          return MaterialApp(
+
+            themeMode: theme.theme,
+              title: 'Flutter Demo',
+            
+              darkTheme: ThemeData(
+                brightness: Brightness.dark,
+                
+              ),
+            
+              theme: ThemeData(
+                primarySwatch: Colors.indigo,
+              ),
+              home: const HomeScreen(),
+            );
+        }
       ),
     );
   }
