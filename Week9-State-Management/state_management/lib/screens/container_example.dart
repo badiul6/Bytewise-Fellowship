@@ -10,7 +10,7 @@ class ContainerExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("rebuildall");
+    print("rebuild all");
     return Scaffold(
       appBar: AppBar(
         title: const Text("Provider Example"),
