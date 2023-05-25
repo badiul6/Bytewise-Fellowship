@@ -50,7 +50,7 @@ class ThirdScreen extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => const ForthScreen()));
                 },
-                child: const Text("Next "))
+                child: const Text("Next"))
           ],
         ));
   }
