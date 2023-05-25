@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:state_management/provider/container_provider.dart';
+import 'package:state_management/screens/count_example.dart';
 
 class ContainerExample extends StatelessWidget {
   const ContainerExample({super.key});
@@ -12,7 +13,7 @@ class ContainerExample extends StatelessWidget {
     print("rebuildall");
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Multi-Provider Example"),
+        title: const Text("Provider Example"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -71,6 +72,12 @@ class ContainerExample extends StatelessWidget {
           )
         ]),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const CountExample()));
+      },
+        child: const Icon(Icons.arrow_forward),
+      ),
+
     );
   }
 }

@@ -15,11 +15,11 @@ class CountExample extends StatefulWidget {
 
 class _CountExampleState extends State<CountExample> {
   @override
-  void initState() {   
+  void initState() {
     super.initState();
     final countProvider= Provider.of<CountProvider>(context, listen: false);
-    Timer.periodic(const Duration(seconds: 1), 
-    (timer) { 
+    Timer.periodic(const Duration(seconds: 1),
+    (timer) {
       countProvider.countInc();
     });
   }
@@ -29,14 +29,14 @@ class _CountExampleState extends State<CountExample> {
     print("build");
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Count with provider"),
+        title: const Text("Count with Multi-Provider"),
       ),
       body:  Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
           child: Consumer<CountProvider>(
             builder: (context, value, child) {
-              print("rebuild only text widget");
+              print("rebuild only Column widget");
               return Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -49,10 +49,9 @@ class _CountExampleState extends State<CountExample> {
             }
           )),
       ),
-          
 
       floatingActionButton: FloatingActionButton(
-        onPressed: () 
+        onPressed: ()
         {
           countProvider.countInc();
         },

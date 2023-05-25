@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:state_management/provider/container_provider.dart';
 import 'package:state_management/provider/count_provider.dart';
 import 'package:state_management/screens/container_example.dart';
-import 'package:state_management/screens/count_example.dart';
 
 
 void main() {
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const CountExample(),
+        home: const ContainerExample(),
       )
     );
   }

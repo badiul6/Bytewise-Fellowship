@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Week2-Learning-Dart-First-App/firstapp/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week2-Learning-Dart-First-App/firstapp/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week2-Learning-Dart-First-App/firstapp/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week6-Animations/animations/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week6-Animations/animations/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week6-Animations/animations/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week7-AdvanceUI/advanceui/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week7-AdvanceUI/advanceui/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week7-AdvanceUI/advanceui/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week9-State-Management/state_management/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week9-State-Management/state_management/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week9-State-Management/state_management/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week3-Widgets-Layouts/widgetslayout/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week3-Widgets-Layouts/widgetslayout/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week3-Widgets-Layouts/widgetslayout/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week5-Navigation-Routing/navigation_routing/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week5-Navigation-Routing/navigation_routing/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week5-Navigation-Routing/navigation_routing/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week10-State-Management/notes_keeping/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week10-State-Management/notes_keeping/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week10-State-Management/notes_keeping/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week4-Interactivity-Assets/interactivity_assets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week4-Interactivity-Assets/interactivity_assets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week4-Interactivity-Assets/interactivity_assets/.pub" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>
