@@ -1,4 +1,4 @@
-# Flutter-Development-Bytewise-Fellowship
+# Flutter-Development-ByteWise-Fellowship
 
 Fellowship of Android Development (Flutter).
 
