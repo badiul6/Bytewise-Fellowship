@@ -67,7 +67,7 @@ class _FirstPageState extends State<FirstPage> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => SecondPage()));
               },
-              child: const Text("Next"),
+              child: const Text("Next "),
             )
           ],
         ),
