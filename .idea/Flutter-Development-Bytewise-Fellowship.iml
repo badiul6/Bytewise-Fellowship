@@ -27,6 +27,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Week4-Interactivity-Assets/interactivity_assets/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/Week4-Interactivity-Assets/interactivity_assets/build" />
       <excludeFolder url="file://$MODULE_DIR$/Week4-Interactivity-Assets/interactivity_assets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Week11-12-Instagram-Clone/instagram_clone/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Week11-12-Instagram-Clone/instagram_clone/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Week11-12-Instagram-Clone/instagram_clone/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
